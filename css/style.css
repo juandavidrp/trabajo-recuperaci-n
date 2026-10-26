@@ -352,6 +352,12 @@
   cursor: pointer;
 }
 
+.btn-edit:hover {
+  background-color: blue;
+  color: white;
+}
+
+
 .btn-edit {
   color: #2563eb;
   border: 1px solid #2563eb;
@@ -362,6 +368,13 @@
   border: 1px solid #dc2626;
   margin-left: 8px;
 }
+
+.btn-delete:hover {
+  background-color: #dc2626;
+  color: white;
+
+}
+
 .filter-select {
   margin-bottom: 0;
   padding: 8px;
