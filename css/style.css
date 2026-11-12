@@ -154,7 +154,7 @@
 
 .stat-card:hover {
  border-top: 6px solid #22c55e;
- text-decoration: underline;
+  text-decoration: none;
 }
 
 
@@ -415,3 +415,6 @@ body {
   cursor: pointer;
 }
 
+.stat-card:hover a {
+  text-decoration: underline;
+}
