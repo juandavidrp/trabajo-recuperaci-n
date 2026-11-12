@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sgc</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../forms/forms-styles.css" />
+</head>
+<body>
+    <div class="container-forms">
+        <form class="form-student">
+            <a href="../enrollments.html" class="close">✕</a>
+            <h2 class="title-form">Modificar matrícula</h2>
+
+            <div class="form-group inputs">
+                <label for="student">Estudiante</label>
+                <select id="student" name="student" required>
+                    <option value="">Seleccione estudiante</option>
+                    <option>Juan David</option>
+                    <option>Juan Perez</option>
+                    <option>Maria Gomez</option>
+                </select>
+
+                <label for="course">Curso</label>
+                <select id="course" name="course" required>
+                    <option value="">Seleccione curso</option>
+                    <option>React Desde Cero</option>
+                    <option>Spring Boot</option>
+                </select>
+
+                <label for="status">Estado</label>
+                <select id="status" name="status" required>
+                    <option>ACTIVA</option>
+                    <option>COMPLETADA</option>
+                    <option>CANCELADA</option>
+                </select>
+
+                <label for="date">Fecha</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="btns">
+                <a href="../enrollments.html" class="add-bith cancel">Cancelar</a>
+                <button type="submit" class="add-bith">Guardar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

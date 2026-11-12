@@ -40,6 +40,11 @@
 
             <main class="main-content">
 
+                <div class="aviso" id="aviso">
+                    <span>🗑️ Elemento eliminado correctamente</span>
+                    <button class="cerrar" onclick="cerrarAviso()">✕</button>
+                </div>
+
                 <div class="header-section">
                     <div>
                         <h3 class="page-title">Matrículas</h3>
@@ -75,8 +80,8 @@
                             <td>2026-07-30</td>
                             <td>ACTIVA</td>
                             <td class="center">
-                                <button class="btn-edit">Editar</button>
-                                <button class="btn-delete">Eliminar</button>
+                                <a href="forms/enrollments-edit-forms.html" class="btn-edit">Editar</a>
+                                <button class="btn-delete" onclick="mostrarAviso()">Eliminar</button>
                             </td>
                         </tr>
                         <tr>
@@ -85,8 +90,8 @@
                             <td>2026-07-30</td>
                             <td>CANCELADA</td>
                             <td class="center">
-                                <button class="btn-edit">Editar</button>
-                                <button class="btn-delete">Eliminar</button>
+                                <a href="forms/enrollments-edit-forms.html" class="btn-edit">Editar</a>
+                                <button class="btn-delete" onclick="mostrarAviso()">Eliminar</button>
                             </td>
                         </tr>
                         <tr>
@@ -95,8 +100,8 @@
                             <td>2026-07-30</td>
                             <td>COMPLETADA</td>
                             <td class="center">
-                                <button class="btn-edit">Editar</button>
-                                <button class="btn-delete">Eliminar</button>
+                                <a href="forms/enrollments-edit-forms.html" class="btn-edit">Editar</a>
+                                <button class="btn-delete" onclick="mostrarAviso()">Eliminar</button>
                             </td>
                         </tr>
                         <tr>
@@ -105,8 +110,8 @@
                             <td>2026-07-29</td>
                             <td>ACTIVA</td>
                             <td class="center">
-                                <button class="btn-edit">Editar</button>
-                                <button class="btn-delete">Eliminar</button>
+                                <a href="forms/enrollments-edit-forms.html" class="btn-edit">Editar</a>
+                                <button class="btn-delete" onclick="mostrarAviso()">Eliminar</button>
                             </td>
                         </tr>
                     </tbody>
@@ -121,5 +126,16 @@
 
         </div>
     </div>
+
+    <script>
+        function mostrarAviso() {
+            document.getElementById("aviso").style.display = "flex";
+            setTimeout(cerrarAviso, 3000);
+        }
+
+        function cerrarAviso() {
+            document.getElementById("aviso").style.display = "none";
+        }
+    </script>
 </body>
 </html>
