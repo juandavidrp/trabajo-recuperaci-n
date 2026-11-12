@@ -40,6 +40,11 @@
 
             <main class="main-content">
 
+                <div class="aviso" id="aviso">
+                    <span>🗑️ Elemento eliminado correctamente</span>
+                    <button class="cerrar" onclick="cerrarAviso()">✕</button>
+                </div>
+
                 <div class="header-section">
                     <div>
                         <h3 class="page-title">Estudiantes</h3>
@@ -69,8 +74,8 @@
                             <td>juandrestrepo@cesde.net</td>
                             <td>3000000001</td>
                             <td class="center">
-                              <a href="forms/studen-edit-forms.html" class="btn-edit">Editar</a>
-                                <button class="btn-delete">Eliminar</button>
+                                <a href="forms/studen-edit-forms.html" class="btn-edit">Editar</a>
+                                <button class="btn-delete" onclick="mostrarAviso()">Eliminar</button>
                             </td>
                         </tr>
                         <tr>
@@ -79,8 +84,8 @@
                             <td>juanperez@cesde.net</td>
                             <td>3000000002</td>
                             <td class="center">
-                                <button class="btn-edit">Editar</button>
-                                <button class="btn-delete">Eliminar</button>
+                                <a href="forms/studen-edit-forms.html" class="btn-edit">Editar</a>
+                                <button class="btn-delete" onclick="mostrarAviso()">Eliminar</button>
                             </td>
                         </tr>
                         <tr>
@@ -89,8 +94,8 @@
                             <td>mariagomez@cesde.net</td>
                             <td>3000000003</td>
                             <td class="center">
-                                <button class="btn-edit">Editar</button>
-                                <button class="btn-delete">Eliminar</button>
+                                <a href="forms/studen-edit-forms.html" class="btn-edit">Editar</a>
+                                <button class="btn-delete" onclick="mostrarAviso()">Eliminar</button>
                             </td>
                         </tr>
                     </tbody>
@@ -105,5 +110,16 @@
 
         </div>
     </div>
+
+    <script>
+        function mostrarAviso() {
+            document.getElementById("aviso").style.display = "flex";
+            setTimeout(cerrarAviso, 3000);
+        }
+
+        function cerrarAviso() {
+            document.getElementById("aviso").style.display = "none";
+        }
+    </script>
 </body>
 </html>
